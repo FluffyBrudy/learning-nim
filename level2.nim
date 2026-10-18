@@ -43,8 +43,22 @@ echo print_len(sequence)
 proc varandianArgs(f: File, a:varargs[string]):void =
   for item in a:
     f.write(item & " ")
+  echo ""
 
 varandianArgs(stdout, "apple", "ball", "cat", "dog")
 #[
  end of varandian-args
+]#
+
+#[
+  handful of slices just minimal
+]#
+var 
+  a = "Meow huha-haha"
+  b = "slices are useful."
+echo a[5..^1]
+b[11..^4] = "meow"
+echo b
+#[
+  end of slices
 ]#
