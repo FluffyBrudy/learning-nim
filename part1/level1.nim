@@ -16,7 +16,7 @@ func is_prime[T: SomeInteger](n: T): bool =
       return false
   return true
 
-func divmodc[T: SomeInteger](a, b: SomeInteger): (T, T) = 
+func divmodc[T: SomeInteger](a, b: T): (T, T) = 
   if a < b:
     return (0, 0)
 
